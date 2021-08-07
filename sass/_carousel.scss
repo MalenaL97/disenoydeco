@@ -1,0 +1,41 @@
+//variables//
+$azuloscuro: #151849;
+$azulclaro: #748EEC;
+$padding: 15px;
+$blanco: #fff;
+$altura: 100px;
+
+//anidamiento//
+.carousel {
+	padding-top: 100px;
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+	
+    .carousel-caption {
+	    bottom: 15px;
+	    z-index: 10;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		text-align: left;
+    }
+  
+    .carousel-item {
+	    height: 32rem;
+    }
+    .carousel-item > img {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    min-width: 100%;
+	    height: 32rem;
+    }
+	@import "sass/boton";
+
+	@media (min-width: 40em) {
+		.carousel-caption p {
+		  margin-bottom: 1.25rem;
+		  font-size: 1.25rem;
+		  line-height: 1.4;
+		}	  
+}
+}

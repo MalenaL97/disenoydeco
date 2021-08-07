@@ -1,0 +1,62 @@
+//variables//
+$azuloscuro: #151849;
+$azulclaro: #748EEC;
+$padding: 15px;
+$blanco: #fff;
+$altura: 100px;
+
+//anidamiento//
+.contenedor {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 20px;
+    background-color: #EFEFEF; 
+	margin: 20px;
+    font-size: 1em;
+
+   .contenedor__cards {
+	    margin: 70px 0;
+	    height: 60%;
+
+        .card {
+	        background-size: 60%;
+            border-radius: 25px;
+	        padding: 25px;
+	        display: flex;
+	        align-items: center;
+	        position: relative;
+	        margin-bottom: 60px;
+
+            .card__thumbnail {
+	            margin-right: 20px;
+	            border-radius: 10px;
+	            overflow: hidden;
+	            display: inline-block;
+            }
+
+            .card__img {
+	            width: 250px;
+	            overflow: hidden;
+            }
+
+            .card__titulo {
+	            font-family: 'Audiowide' ;
+	            color: $azuloscuro;
+	            font-size: 30px;
+	            font-weight: normal;
+	            margin-bottom: 20px;
+            }
+
+            .card__extracto {
+	            line-height: 36px;
+	            color: #6D6D6D;
+	            margin-bottom: 30px;
+                font-size: 2em;
+            }
+			@import "sass/boton";
+		}
+
+
+    }
+}

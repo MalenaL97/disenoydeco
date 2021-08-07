@@ -1,0 +1,172 @@
+//variables//
+$azuloscuro: #151849;
+$azulclaro: #748EEC;
+$padding: 15px;
+$blanco: #fff;
+$altura: 100px;
+
+/* Responsive */
+
+@media only screen and (max-width: 1199px){
+}
+@media only screen and (max-width: 991px){
+}
+@media only screen and (max-width: 767px){    
+}
+@media only screen and (max-width: 575px){   
+}
+@media only screen and (max-width: 479px){  
+}
+
+
+//anidamiento//
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+body {
+	box-sizing: border-box;
+	background-color: #EFEFEF;
+}
+
+/* header */ 
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: baseline;
+	background-color: #EFEFEF;
+	position:fixed; 
+	height: $altura;
+	width: 100%; 
+	z-index: 100;
+	margin-top: 10px;
+	padding-top: 0px;
+	padding-left: 20px;
+}
+	a {
+		text-decoration: none;
+	}
+	
+	li {
+		list-style: none;
+	}
+	
+	.menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center; 
+	}
+	.menu>li {
+	    padding: 20px;
+	    margin: 20px;
+	}
+	.menu>li>a {
+		@import "sass/boton";
+		font-family:'Montserrat';
+		font-weight: 500;
+		font-size: 15px;
+		color: $blanco;
+	}
+	.menu>li>a:hover {
+		@import "sass/boton";
+
+	}
+
+p{
+	color: $azuloscuro;
+	font-family: 'Montserrat';
+	font-weight: 300;
+	font-size: 30px;
+	text-align: justify;
+ } 
+ h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: $azuloscuro;
+	font-size: 30px;	
+}
+.about{
+	margin-bottom: 40px;
+	margin-left: 40px;
+    margin-right: 40px;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: row;
+	row-gap: 60px;
+	justify-content: space-around;
+	align-items: center
+}
+h4 {
+	padding-top: 150px ;
+	padding-left: 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	color: $azuloscuro;
+	font-size: 30px;	
+}
+	
+/* Carousel */
+@import "sass/carousel";
+
+/* 1er grupo cards */
+@import "sass/1erascards";
+
+/* 2do grupo cards */
+@import "sass/2dascards";
+
+/* Seccion productos*/
+@import "sass/productos";
+
+/* Formulario */
+
+form {
+    width: 45%;
+    background-color: #EFEFEF;
+	padding-top: 180px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+
+    .contenedorForm {
+        display: flex;
+        justify-content: left;
+		border: 2px;
+		border-color: $azuloscuro;
+		border-radius: 50px
+    }
+    @import "sass/boton";
+}
+
+/* Footer */
+.zocalo {
+	padding: 64px;
+	background-color:#151849 ;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    height: $altura; 
+    .zocaloNavRedes {
+        display: flex;
+        flex-direction: row;
+		align-items: center;
+	    justify-content: space-between;
+    }
+
+    .zocaloContacto {
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: space-around;
+	    padding-top: 20px;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	    font-family: 'Montserrat', sans-serif;
+		font-weight: 300;
+	    font-size: 10px;
+	    color: $blanco;
+    }
+}

@@ -1,0 +1,34 @@
+.boton {
+    border: none;
+    min-width: 90px;
+    height: 40px;
+    padding: 0 30px;
+    color: $blanco;
+    display: inline-block;
+    border-radius: 80px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $azuloscuro;
+    transition: .3s ease all;
+    text-align: center;
+}
+
+    .boton__texto {
+        font-family:'Montserrat';
+		font-weight: 500;
+		font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .boton:hover {
+        background: $azulclaro;
+        text-decoration: none;
+    }
+
+    .boton--absolute {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+    }

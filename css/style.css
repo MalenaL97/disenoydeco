@@ -1,0 +1,388 @@
+/* Responsive */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem; }
+
+body {
+  box-sizing: border-box;
+  background-color: #EFEFEF; }
+
+/* header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  background-color: #EFEFEF;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  z-index: 100;
+  margin-top: 10px;
+  padding-top: 0px;
+  padding-left: 20px; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.menu > li {
+  padding: 20px;
+  margin: 20px; }
+
+.menu > li > a {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff; }
+  .menu > li > a .boton {
+    border: none;
+    min-width: 90px;
+    height: 40px;
+    padding: 0 30px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 80px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #151849;
+    transition: .3s ease all;
+    text-align: center; }
+  .menu > li > a .boton__texto {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center; }
+  .menu > li > a .boton:hover {
+    background: #748EEC;
+    text-decoration: none; }
+  .menu > li > a .boton--absolute {
+    position: absolute;
+    right: 20px;
+    bottom: 10px; }
+
+.menu > li > a:hover .boton {
+  border: none;
+  min-width: 90px;
+  height: 40px;
+  padding: 0 30px;
+  color: #fff;
+  display: inline-block;
+  border-radius: 80px;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #151849;
+  transition: .3s ease all;
+  text-align: center; }
+
+.menu > li > a:hover .boton__texto {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center; }
+
+.menu > li > a:hover .boton:hover {
+  background: #748EEC;
+  text-decoration: none; }
+
+.menu > li > a:hover .boton--absolute {
+  position: absolute;
+  right: 20px;
+  bottom: 10px; }
+
+p {
+  color: #151849;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 30px;
+  text-align: justify; }
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #151849;
+  font-size: 30px; }
+
+.about {
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  row-gap: 60px;
+  justify-content: space-around;
+  align-items: center; }
+
+h4 {
+  padding-top: 150px;
+  padding-left: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #151849;
+  font-size: 30px; }
+
+/* Carousel */
+.carousel {
+  padding-top: 100px;
+  margin-top: 0rem;
+  margin-bottom: 0rem; }
+  .carousel .carousel-caption {
+    bottom: 15px;
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: left; }
+  .carousel .carousel-item {
+    height: 32rem; }
+  .carousel .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem; }
+  .carousel .boton {
+    border: none;
+    min-width: 90px;
+    height: 40px;
+    padding: 0 30px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 80px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #151849;
+    transition: .3s ease all;
+    text-align: center; }
+  .carousel .boton__texto {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center; }
+  .carousel .boton:hover {
+    background: #748EEC;
+    text-decoration: none; }
+  .carousel .boton--absolute {
+    position: absolute;
+    right: 20px;
+    bottom: 10px; }
+  @media (min-width: 40em) {
+    .carousel .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4; } }
+
+/* 1er grupo cards */
+.card-group {
+  width: 600px;
+  height: 400px;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px; }
+
+.card-text {
+  font-size: 15px; }
+
+/* 2do grupo cards */
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: #EFEFEF;
+  margin: 20px;
+  font-size: 1em; }
+  .contenedor .contenedor__cards {
+    margin: 70px 0;
+    height: 60%; }
+    .contenedor .contenedor__cards .card {
+      background-size: 60%;
+      border-radius: 25px;
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-bottom: 60px; }
+      .contenedor .contenedor__cards .card .card__thumbnail {
+        margin-right: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: inline-block; }
+      .contenedor .contenedor__cards .card .card__img {
+        width: 250px;
+        overflow: hidden; }
+      .contenedor .contenedor__cards .card .card__titulo {
+        font-family: 'Audiowide';
+        color: #151849;
+        font-size: 30px;
+        font-weight: normal;
+        margin-bottom: 20px; }
+      .contenedor .contenedor__cards .card .card__extracto {
+        line-height: 36px;
+        color: #6D6D6D;
+        margin-bottom: 30px;
+        font-size: 2em; }
+      .contenedor .contenedor__cards .card .boton {
+        border: none;
+        min-width: 90px;
+        height: 40px;
+        padding: 0 30px;
+        color: #fff;
+        display: inline-block;
+        border-radius: 80px;
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #151849;
+        transition: .3s ease all;
+        text-align: center; }
+      .contenedor .contenedor__cards .card .boton__texto {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center; }
+      .contenedor .contenedor__cards .card .boton:hover {
+        background: #748EEC;
+        text-decoration: none; }
+      .contenedor .contenedor__cards .card .boton--absolute {
+        position: absolute;
+        right: 20px;
+        bottom: 10px; }
+
+/* Seccion productos*/
+.categorias {
+  display: grid;
+  row-gap: 70px;
+  column-gap: 30px;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-content: center; }
+  .categorias .cardproducto {
+    width: 18rem;
+    height: 30rem;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    margin-left: 40px; }
+
+.boton {
+  border: none;
+  min-width: 90px;
+  height: 40px;
+  padding: 0 30px;
+  color: #fff;
+  display: inline-block;
+  border-radius: 80px;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #151849;
+  transition: .3s ease all;
+  text-align: center; }
+
+.boton__texto {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center; }
+
+.boton:hover {
+  background: #748EEC;
+  text-decoration: none; }
+
+.boton--absolute {
+  position: absolute;
+  right: 20px;
+  bottom: 10px; }
+
+/* Formulario */
+form {
+  width: 45%;
+  background-color: #EFEFEF;
+  padding-top: 180px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem; }
+  form .contenedorForm {
+    display: flex;
+    justify-content: left;
+    border: 2px;
+    border-color: #151849;
+    border-radius: 50px; }
+  form .boton {
+    border: none;
+    min-width: 90px;
+    height: 40px;
+    padding: 0 30px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 80px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #151849;
+    transition: .3s ease all;
+    text-align: center; }
+  form .boton__texto {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center; }
+  form .boton:hover {
+    background: #748EEC;
+    text-decoration: none; }
+  form .boton--absolute {
+    position: absolute;
+    right: 20px;
+    bottom: 10px; }
+
+/* Footer */
+.zocalo {
+  padding: 64px;
+  background-color: #151849;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px; }
+  .zocalo .zocaloNavRedes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+  .zocalo .zocaloContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    color: #fff; }
