@@ -18,7 +18,7 @@
 <body>   
 	<!-- encabezado de mi sitio --> 
 	<header class="header">
-    <a href="#"><img src="img/logotipo.jpg" alt="logotipo" width="155" height="82" padding="20px"></a> 
+    <a href="#"><img src="img/logotipo.jpg" alt="logotipo" width="140" height="78" padding="10px"></a> 
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,6 +47,23 @@
     </nav>
  </header>
 <!-- fin de mi encabezado-->
+<!-- portada-->
+<div class="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="first-slide imagenDesktop"
+        src="img/mesa-objetos2.jpg" alt="portada macetas">
+        <div class="container">
+          <div class="carousel-caption">
+            <h2>Accesorios</h2>
+            <p class="card__texto">Encontra los accesorios mas lindos en distintos tamaños y estilos para darle tu estilo a los espacios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- contenido-->
    <main>
       <section>
@@ -54,16 +71,16 @@
             <div class="card cardproducto">
               <img src="img/piramide-resina.jpg" class="card-img-top" alt="jarron-arena">
               <div class="card-body">
-                <h2>Maceta Arena</h2>
-                  <p class="card-text">Maceta de arcilla y arena. Diametro:20cm</p>
+                <h3 class="titulo-productos">Piramide Resina</h3>
+                  <p class="texto-productos">Piramide de resina. Medidas: 15x15x18</p>
                     <a href="#" class="boton">Shop</a>
               </div>
             </div>
             <div class="card cardproducto">
               <img src="img/marco-decorativo.jpg" class="card-img-top" alt="Marco decorativo">
               <div class="card-body">
-                <h2>Marco deccorativo</h2>
-                  <p class="card-text">Marco decorativo de resina. Medidas: 16x24</p>
+                <h3 class="titulo-productos">Marco decorativo</h3>
+                  <p class="texto-productos">Marco decorativo de resina. Medidas: 16x24</p>
                     <a href="#" class="boton">Shop</a>
               </div>
             </div>
@@ -72,18 +89,27 @@
    </main>
    <!-- apertura de pie de pagina-->
    <footer class="zocalo">
-      <a href="#" class="zocaloUp"><i class="fas fa-chevron-up"></i></a>
-      <div class="zocaloNavRedes">
-          <a href=""><i class="fab fa-instagram-square"></i> <img src="img/logo-instagram.png" alt="logo instagram" width="32" height="32"></a>
-          <a href=""><i class="fab fa-facebook-square"></i> <img src="img/logo-facebook.png" alt="logo facebook" width="32" height="32"></a>
+    <section class="widget widget_blog_subscription">
+      <form action="#" method="post" accept-charset="utf-8" id="subscribe-blog">
+        <p>Subscribite a nuestro newsletter.</p>
+        <p>
+          <input type="text" name="email" placeholder="Escribi tu email" value="" id="subscribe-field">
+        </p>
+        <p>
+          <input type="submit" value="Enviar">
+        </p>
+      </form>
+    </section>
+      <div class="redes">
+        <a href=""><img src="img/logo-instagram.png" alt="logo instagram" width="32" height="32"></a>
+        <a href=""><img src="img/logo-facebook.png" alt="logo facebook" width="32" height="32"></a>
+        <a href=""><img src="img/logo-whatsaap.png" alt="logo whatsapp" width="32" height="32"></a>
       </div>
-      <div class="zocaloContacto">
-          <h3> Copyright 2021</h3>
-          <h3> Todos los derechos reservados</h3>
+      <div>
+        <h5> Copyright 2021. Todos los derechos reservados</h5>
       </div>
   </footer>
    <!-- cierre de pie de pagina-->
-   </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

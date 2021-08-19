@@ -22,11 +22,13 @@
       <a href="#"><img src="img/logotipo.jpg" alt="logotipo" width="155" height="82" padding="20px"></a> 
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
         </button>
+        
       <nav>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="menu">
             <li class="boton"><a href="index.html">Inicio</a></li>
             <li class="boton"><a href="nosotros.html">Nosotros</a></li>
@@ -50,7 +52,7 @@
 <!-- fin de mi encabezado-->
 <!-- carrousel -->
    <main>
-      <section>
+      <section class="carousel">
          <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -109,25 +111,25 @@
    <!-- cierre de carrousel-->
    <!-- 1er grupo cards-->
    <div class="card-group">
-      <div class="card" style="background-color: #151849;">
+      <div class="card">
         <img class="card-img-top" src="img/icono1.jpg" alt="Card image cap" width="125" height="100">
         <div class="card-body">
-          <h5 class="card-title" style="color:white;">Calidad</h5>
-          <p class="card-text" style="color:white;">This is a wider card with supporting text below as a natural lead-in to additional content</p>
+          <h3 class="card-title">Calidad</h3>
+          <p class="card__texto">This is a wider card with supporting text below as a natural lead-in to additional content</p>
         </div>
       </div>
-      <div class="card" style="background-color: #151849;">
+      <div class="card">
         <img class="card-img-top" src="img/icono2.jpg" alt="Card image cap" width="125" height="100">
         <div class="card-body">
-          <h5 class="card-title" style="color:white;">Diseño de autor</h5>
-          <p class="card-text" style="color:white;">This card has supporting text below as a natural lead-in to additional content</p>
+          <h3 class="card-title">Diseño de autor</h3>
+          <p class="card__texto">This card has supporting text below as a natural lead-in to additional content</p>
         </div>
       </div>
-      <div class="card" style="background-color: #151849;">
+      <div class="card">
         <img class="card-img-top" src="img/icono3.jpg" alt="Card image cap" width="125" height="100">
         <div class="card-body">
-          <h5 class="card-title" style="color:white;">Compromiso</h5>
-          <p class="card-text" style="color:white;">This is a wider card with supporting text below as a natural lead-in to additional content</p>
+          <h3 class="card-title">Compromiso</h3>
+          <p class="card__texto">This is a wider card with supporting text below as a natural lead-in to additional content</p>
         </div>
       </div>
     </div>
@@ -136,60 +138,56 @@
    <section>
          <div class="contenedor justify-content-around">
             <div class="contenedor__cards">
-               <div class="card" style="width: 18rem;">
-                  <a href="" class="card__thumbnail">
-                     <img src="img/images.jpg" alt="lampara" class="card__img"></a>
-                  <div class="card__textos">
-                     <h2 class="card__titulo"> Nuevo producto</h2>
-                     <p class="card__extractos">Llegaron las lamparas de acrilico. Pronto conoceras mas productos en este material</p>
-                     <a href="#" class="boton boton--absolute">
-                        <span class="boton__texto"> Ver mas →</span>
-                     </a>
-                  </div>
-               </div>
+              <div class="card1">
+                <img class="card__img1" src="img/mesa-objetos.jpg" alt="Card image">
+                <div class="card-img-overlay">
+                  <h3 class="card__titulo">Card title</h3>
+                  <p class="card__texto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="boton boton--absolute"><span class="boton__texto"> Ver mas →</span></a></div>
+                </div>
+              <div class="card2">
+                <img class="card__img2" src="img/lampara.jpg" alt="Card image">
+                <div class="card-img-overlay">
+                  <h3 class="card__titulo">Card title</h3>
+                  <p class="card__texto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="boton boton--absolute"><span class="boton__texto"> Ver mas →</span></a></div>
+                </div>
+              <div class="contenedor__cards">
+               <div class="card3">
+                <img class="card__img3" src="img/lampara.jpg" alt="Card image">
+                <div class="card-img-overlay">
+                  <h3 class="card__titulo">Card title</h3>
+                  <p class="card__texto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="boton boton--absolute"><span class="boton__texto"> Ver mas →</span></a></div>
+                </div>
+              </div>
             </div>
-            <div class="contenedor__cards">
-               <div class="card" style="width: 18rem;">
-                  <a href="" class="card__thumbnail">
-                     <img src="img/images.jpg" alt="lampara" class="card__img"></a>
-                  <div class="card__textos">
-                     <h2 class="card__titulo"> Nuevo producto</h2>
-                     <p class="card__extractos">Llegaron las lamparas de acrilico. Pronto conoceras mas productos en este material</p>
-                     <a href="#" class="boton boton--absolute">
-                        <span class="boton__texto"> Ver mas →</span>
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <div class="contenedor__cards">
-               <div class="card" style="width: 18rem;">
-                  <a href="" class="card__thumbnail">
-                     <img src="img/images.jpg" alt="lampara" class="card__img"></a>
-                  <div class="card__textos">
-                     <h2 class="card__titulo"> Nuevo producto</h2>
-                     <p class="card__extractos">Llegaron las lamparas de acrilico. Pronto conoceras mas productos en este material</p>
-                     <a href="#" class="boton boton--absolute">
-                        <span class="boton__texto"> Ver mas →</span>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
+          </div>
+        </div>
    </section>
     <!-- apertura de pie de pagina-->
     <footer class="zocalo">
-      <a href="#"></a>
-      <div class="zocaloNavRedes">
-          <a href=""><i class="fab fa-instagram-square"></i> <img src="img/logo-instagram.png" alt="logo instagram" width="32"></a>
-          <a href=""><i class="fab fa-facebook-square"></i> <img src="img/logo-facebook.png" alt="logo facebook" height="32"></a>
-      </div>
-      <div class="zocaloContacto">
-          <h3> Copyright 2021</h3>
-          <h3> Todos los derechos reservados</h3>
-      </div>
-  </footer>
+      <section class="widget widget_blog_subscription">
+        <form action="#" method="post" accept-charset="utf-8" id="subscribe-blog">
+          <p>Subscribite a nuestro newsletter.</p>
+          <p>
+            <input type="text" name="email" placeholder="Escribi tu email" value="" id="subscribe-field">
+          </p>
+          <p>
+            <input type="submit" value="Enviar">
+          </p>
+        </form>
+      </section>
+        <div class="redes">
+          <a href=""><img src="img/logo-instagram.png" alt="logo instagram" width="32" height="32"></a>
+          <a href=""><img src="img/logo-facebook.png" alt="logo facebook" width="32" height="32"></a>
+          <a href=""><img src="img/logo-whatsaap.png" alt="logo whatsapp" width="32" height="32"></a> 
+        </div>
+        <div>
+          <h5> Copyright 2021. Todos los derechos reservados</h5>
+        </div>
+    </footer>
     <!-- cierre de pie de pagina-->
-   </div>
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

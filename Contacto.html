@@ -45,70 +45,52 @@
         </ul>
       </div>
     </nav>
- </header>
+  </header>
 <!-- fin de mi encabezado-->
 <!-- formulario de contacto-->
-   <main>
-       <section style="padding-top: 200px;">
-           <form action="enviar.php" method="POST" enctype="multipart/form-data">
-            <h2>Suscribite a nuestro newsletter</h2>
-            <div class="row mb-3">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Correo</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3">
-                </div>
-              </div>
+  <main>
+    <section>
+      <form class="formulario" action="enviar.php" method="POST" enctype="multipart/form-data">
+        <h2>Envianos tu mensaje</h2>
+          <div class="row mb-3">
+            </div>
               <div class="row mb-3">
                 <label for="inputName3" class="col-sm-2 col-form-label">Nombre</label>
                 <div class="col-sm-10">
                   <input type="name" class="form-control" id="inputName3">
                 </div>
               </div>
-              <fieldset class="row mb-3">
-                <legend class="col-form-label col-sm-2 pt-0">Quiero recibir novedades de</legend>
-                <div class="col-sm-10">
-                  <div class="form-check">
-                    <input class="form-check-input bg-danger" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                    <label class="form-check-label" for="gridRadios1">
-                      Diseño
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input bg-danger" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                    <label class="form-check-label " for="gridRadios2">
-                      Decoracion
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-              <div class="row mb-3">
-                <div class="col-sm-10 offset-sm-2">
-                  <div class="form-check">
-                    <input class="form-check-input bg-danger" type="checkbox" id="gridCheck1">
-                    <label class="form-check-label" for="gridCheck1">
-                      Quiero recibir semanalmente las últimas novedades a mi correo
-                    </label>
-                  </div>
-                </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Escribi tu mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
-              <button type="submit" class="boton" href="#">Subscribirse</button>	
+              <button type="submit" class="boton" href="#">Enviar</button>	
         </form>
        </section>
    </main>
     <!-- apertura de pie de pagina-->
     <footer class="zocalo">
-        <a href="#" class="zocaloUp"><i class="fas fa-chevron-up"></i></a>
-        <div class="zocaloNavRedes">
-            <a href=""><i class="fab fa-instagram-square"></i> <img src="img/logo-instagram.png" alt="logo instagram" width="32" height="32"></a>
-            <a href=""><i class="fab fa-facebook-square"></i> <img src="img/logo-facebook.png" alt="logo facebook" width="32" height="32"></a>
+      <section class="widget widget_blog_subscription">
+        <form action="#" method="post" accept-charset="utf-8" id="subscribe-blog">
+          <p>Subscribite a nuestro newsletter.</p>
+          <p>
+            <input type="text" name="email" placeholder="Escribi tu email" value="" id="subscribe-field">
+          </p>
+          <p>
+            <input type="submit" value="Enviar">
+          </p>
+        </form>
+      </section>
+        <div class="redes">
+          <a href=""><img src="img/logo-instagram.png" alt="logo instagram" width="32" height="32"></a>
+          <a href=""><img src="img/logo-facebook.png" alt="logo facebook" width="32" height="32"></a>
+          <a href=""><img src="img/logo-whatsaap.png" alt="logo whatsapp" width="32" height="32"></a>
         </div>
-        <div class="zocaloContacto">
-            <h3> Copyright 2021</h3>
-            <h3> Todos los derechos reservados</h3>
+        <div>
+          <h5> Copyright 2021. Todos los derechos reservados</h5>
         </div>
     </footer>
    <!-- cierre de pie de pagina-->
-   </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

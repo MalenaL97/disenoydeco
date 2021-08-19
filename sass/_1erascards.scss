@@ -1,12 +1,40 @@
+//variables//
+$azuloscuro: #151849;
+$azulclaro: #748EEC;
+$padding: 20px;
+$blanco: #fff;
+$altura: 100px;
+
 .card-group {
-	width: 600px;
-	height: 400px;
+	display: flex;
+	flex-direction: row;
+	margin-left: auto;
+	margin-right: auto;
+	width: 45rem;
 	justify-content: center;
+	align-items: center;
 	padding-top: 100px;
 	padding-bottom: 100px;
-    padding-left: 100px;
 
-}
-.card-text {
-	font-size: 15px;
+	.card {
+		width: 15rem;
+		height: 20rem;
+        margin-left: auto;
+	    margin-right: auto;
+        background-color: $azuloscuro;
+
+	    .card-title{
+		    font-family: 'Montserrat', sans-serif;
+	        font-size: 25px;
+		    font-weight: 500;
+		    color: $blanco;
+			text-align: center;
+	    }
+        .card__texto {
+	        font-family: 'Montserrat', sans-serif;
+	        font-size: 15px;
+		    font-weight: 300;
+		    color: $blanco;
+        }
+    }
 }

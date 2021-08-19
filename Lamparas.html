@@ -47,51 +47,85 @@
     </nav>
  </header>
 <!-- fin de mi encabezado-->
-<!-- contenido-->
+<!-- portada-->
+<div class="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="first-slide imagenDesktop"
+        src="img/portada lampara.jpg" alt="portada lamparas">
+        <div class="container">
+          <div class="carousel-caption">
+            <h2>Lamparas</h2>
+            <p>Encontra las lamparas mas lindas en distintos tamaños y estilos para iluminar tus espacios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- contenido-->
    <main>
       <section>
-         <div class="categorias">
-            <div class="card cardproducto">
-              <img src="img/lampara.jpg" class="card-img-top" alt="Lampara de ceramica verde">
-              <div class="card-body">
-                <h2>Lampara Ceramica</h2>
-                  <p class="card-text">Lampara de escritorio. Ceramica verde. Diametro:10cm</p>
-                    <a href="#" class="boton">Shop</a>
-              </div>
-            </div>
-            <div class="card cardproducto">
-              <img src="img/lampara_acrilico.jpg" class="card-img-top" alt="Lampara de acrilico">
-              <div class="card-body">
-                <h2>Lampara Acrilico</h2>
-                  <p class="card-text">Lampara de escritorio. Acrilico. Medidas: 24x24x45</p>
-                    <a href="#" class="boton">Shop</a>
-              </div>
-            </div>
-            <div class="card cardproducto">
-              <img src="img/mini-lampara-blanca.jpg" class="card-img-top" alt="Lampara de ceramica verde">
-              <div class="card-body">
-                <h2>Mini lampara Ceramica</h2>
-                  <p class="card-text">Lampara de escritorio. Ceramica blanca. Diametro:8cm</p>
-                    <a href="#" class="boton">Shop</a>
-              </div>
+        <div class="categorias responsive">
+          <div class="card cardproducto">
+            <img src="img/lampara.jpg" class="card-img-top" alt="Lampara de ceramica verde">
+            <div class="card-body">
+              <h3 class="titulo-productos">Lampara Ceramica</h3>
+                <p class="texto-productos">Lampara de escritorio. Ceramica. Diametro: 12cm</p>
+                  <a href="#" class="boton">Shop</a>
             </div>
           </div>
-     </section>
-   </main>
+          <div class="card cardproducto">
+            <img src="img/lampara_acrilico.jpg" class="card-img-top" alt="Lampara de acrilico">
+            <div class="card-body">
+              <h3 class="titulo-productos">Lampara Acrilico</h3>
+                <p class="texto-productos">Lampara de escritorio. Acrilico. Medidas: 24x24x45</p>
+                  <a href="#" class="boton">Shop</a>
+            </div>
+          </div>
+          <div class="card cardproducto">
+            <img src="img/lampara-caracol2.jpg" class="card-img-top" alt="Lampara caracol">
+            <div class="card-body">
+              <h3 class="titulo-productos">Lampara Caracol</h3>
+                <p class="texto-productos">Lampara de escritorio. Ceramica. Medidas: 14x17x12</p>
+                  <a href="#" class="boton">Shop</a>
+            </div>
+          </div>
+          <div class="card cardproducto">
+            <img src="img/mini-lampara-blanca.jpg" class="card-img-top" alt="Lampara de ceramica verde">
+            <div class="card-body">
+              <h3 class="titulo-productos">Mini lampara Ceramica</h3>
+                <p class="texto-productos">Lampara de escritorio. Ceramica blanca. Diametro:8cm</p>
+                  <a href="#" class="boton">Shop</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
    <!-- apertura de pie de pagina-->
    <footer class="zocalo">
-      <a href="#" class="zocaloUp"><i class="fas fa-chevron-up"></i></a>
-      <div class="zocaloNavRedes">
-          <a href=""><i class="fab fa-instagram-square"></i> <img src="img/logo-instagram.png" alt="logo instagram" width="32" height="32"></a>
-          <a href=""><i class="fab fa-facebook-square"></i> <img src="img/logo-facebook.png" alt="logo facebook" width="32" height="32"></a>
+    <section class="widget widget_blog_subscription">
+      <form action="#" method="post" accept-charset="utf-8" id="subscribe-blog">
+        <p>Subscribite a nuestro newsletter.</p>
+        <p>
+          <input type="text" name="email" placeholder="Escribi tu email" value="" id="subscribe-field">
+        </p>
+        <p>
+          <input type="submit" value="Enviar">
+        </p>
+      </form>
+    </section>
+      <div class="redes">
+        <a href=""><img src="img/logo-instagram.png" alt="logo instagram" width="32" height="32"></a>
+        <a href=""><img src="img/logo-facebook.png" alt="logo facebook" width="32" height="32"></a>
+        <a href=""><img src="img/logo-whatsaap.png" alt="logo whatsapp" width="32" height="32"></a>
       </div>
-      <div class="zocaloContacto">
-          <h3> Copyright 2021</h3>
-          <h3> Todos los derechos reservados</h3>
+      <div>
+        <h5> Copyright 2021. Todos los derechos reservados</h5>
       </div>
   </footer>
    <!-- cierre de pie de pagina-->
-   </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
