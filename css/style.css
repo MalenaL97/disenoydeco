@@ -29,21 +29,12 @@ li {
   list-style: none; }
 
 .menu {
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center; }
-
-.menu > li {
-  padding: 20px;
-  margin: 20px; }
-
-.menu > li > a {
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 15px;
-  color: #fff; }
-  .menu > li > a .boton {
+  .menu .boton {
     border: none;
     min-width: 90px;
     height: 40px;
@@ -58,51 +49,29 @@ li {
     background: #151849;
     transition: .3s ease all;
     text-align: center; }
-  .menu > li > a .boton__texto {
+  .menu .boton__texto {
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 15px;
     font-weight: 600;
     text-align: center; }
-  .menu > li > a .boton:hover {
+  .menu .boton:hover {
     background: #748EEC;
     text-decoration: none; }
-  .menu > li > a .boton--absolute {
+  .menu .boton--absolute {
     position: absolute;
     right: 20px;
     bottom: 10px; }
 
-.menu > li > a:hover .boton {
-  border: none;
-  min-width: 90px;
-  height: 40px;
-  padding: 0 30px;
-  color: #fff;
-  display: inline-block;
-  border-radius: 80px;
-  text-decoration: none;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #151849;
-  transition: .3s ease all;
-  text-align: center; }
+.menu > li {
+  padding-top: 30px;
+  margin: 20px; }
 
-.menu > li > a:hover .boton__texto {
+.menu > li > a {
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 15px;
-  font-weight: 600;
-  text-align: center; }
-
-.menu > li > a:hover .boton:hover {
-  background: #748EEC;
-  text-decoration: none; }
-
-.menu > li > a:hover .boton--absolute {
-  position: absolute;
-  right: 20px;
-  bottom: 10px; }
+  color: #fff; }
 
 p {
   color: #151849;
@@ -112,7 +81,8 @@ p {
   text-align: justify; }
 
 h2 {
-  padding-top: 100px;
+  padding-top: 30px;
+  padding-bottom: 15px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #151849;
@@ -200,13 +170,13 @@ h4 {
   flex-direction: row;
   margin-left: auto;
   margin-right: auto;
-  width: 45rem;
+  width: 42rem;
   justify-content: center;
   align-items: center;
   padding-top: 100px;
   padding-bottom: 100px; }
   .card-group .card {
-    width: 12rem;
+    width: 14rem;
     height: 20rem;
     margin-left: auto;
     margin-right: auto;
@@ -461,6 +431,25 @@ h4 {
       font-weight: 300;
       color: #151849; }
 
+/* Tutoriales */
+.tutoriales {
+  padding-top: 150px;
+  padding-bottom: 40px;
+  margin-left: 40px; }
+  .tutoriales ul li {
+    margin-left: 20px;
+    list-style-type: disc;
+    color: #151849;
+    font-family: 'Montserrat'; }
+    .tutoriales ul li .titulo-chico {
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 20px; }
+    .tutoriales ul li .paso-paso {
+      font-family: 'Montserrat';
+      font-weight: 300;
+      font-size: 15px; }
+
 /* Formulario */
 .formulario {
   width: 45%;
@@ -499,10 +488,6 @@ h4 {
     position: absolute;
     right: 20px;
     bottom: 10px; }
-
-.lista {
-  list-style-type: circle;
-  font-family: 'Montserrat'; }
 
 /* Footer */
 .zocalo {

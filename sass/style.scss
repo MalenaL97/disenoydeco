@@ -54,25 +54,22 @@ li {
 }
 	
 .menu {
+	margin-top: 30px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center; 
+	@import "sass/boton";
 }
 .menu>li {
-	padding: $padding;
+	padding-top: 30px;
 	margin: 20px;
 }
 .menu>li>a {
-	@import "sass/boton";
 	font-family:'Montserrat';
 	font-weight: 500;
 	font-size: 15px;
 	color: $blanco;
-}
-.menu>li>a:hover {
-	@import "sass/boton";
-
 }
 
 p{
@@ -83,7 +80,8 @@ p{
 	text-align: justify;
  } 
  h2 {
-	padding-top: 100px;
+	padding-top: 30px;
+	padding-bottom: 15px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	color: $azuloscuro;
@@ -128,8 +126,29 @@ h4 {
 /* Seccion productos*/
 @import "sass/productos";
 
+/* Tutoriales */
+.tutoriales{
+	padding-top: 150px;
+	padding-bottom: 40px;
+	margin-left: 40px;
+    ul li{
+		margin-left: 20px;
+	    list-style-type: disc;
+	    color: $azuloscuro;
+	    font-family: 'Montserrat';	
+	    .titulo-chico {
+	        font-family: 'Montserrat';
+	        font-weight: 500;
+	        font-size: 20px;
+        }
+	    .paso-paso{
+		    font-family: 'Montserrat';
+	        font-weight: 300;
+	        font-size: 15px;
+	    }
+    }
+}
 /* Formulario */
-
 .formulario {
     width: 45%;
     background-color: #EFEFEF;
@@ -142,13 +161,6 @@ h4 {
         justify-content: left;
     }
     @import "sass/boton";
-}
-
-.lista{
-	list-style-type: circle;
-	
-	font-family: 'Montserrat';	
-
 }
 
 /* Footer */
