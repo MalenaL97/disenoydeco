@@ -1,5 +1,5 @@
 {
-  "name": "reentrega-4ta-entrega",
+  "name": "entrega-final",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MalenaL97/reentrega-4ta-entrega.git"
+    "url": "git+https://github.com/MalenaL97/entrega-final.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MalenaL97/reentrega-4ta-entrega/issues"
+    "url": "git+https://github.com/MalenaL97/entrega-final/issues"
   },
-  "homepage": "https://github.com/MalenaL97/reentrega-4ta-entrega#readme",
+  "homepage": "git+https://github.com/MalenaL97/entrega-final#readme",
   "devDependencies": {
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
