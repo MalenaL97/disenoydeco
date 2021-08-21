@@ -1,4 +1,56 @@
+@charset "UTF-8";
 /* Responsive */
+@media (max-width: 540px) {
+  .categorias {
+    display: flex;
+    flex-direction: column; }
+  .card-group {
+    display: flex;
+    flex-direction: column; }
+  .contenedor {
+    display: flex;
+    flex-direction: column; } }
+
+@media (max-width: 960px) {
+  .menu {
+    padding: 20px;
+    font-size: 1em;
+    text-align: left;
+    /* Estilo del boton cuando el menú está expandido*/
+    /*Estilo cuando el mouse pasa encima de cada link del menu*/ }
+    .menu ul {
+      display: none; }
+    .menu input:checked ~ menu {
+      display: block; }
+    .menu input {
+      display: none; }
+    .menu label {
+      box-sizing: border-box;
+      display: inline-block;
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-weight: 300;
+      text-align: center;
+      user-select: none; }
+    .menu input:checked ~ label {
+      background: lightgrey; }
+    .menu menu {
+      margin-top: 0;
+      padding: 0;
+      width: 200px; }
+    .menu li {
+      display: block;
+      background: #151849;
+      margin: 0;
+      padding: 10px;
+      list-style: none;
+      border-bottom: 1px solid #748EEC; }
+    .menu li:hover {
+      filter: brightness(110%); } }
+
 * {
   margin: 0;
   padding: 0;
@@ -102,6 +154,8 @@ h2 {
   row-gap: 60px;
   justify-content: space-around;
   align-items: center; }
+  .about .foto {
+    margin-right: 30px; }
 
 h4 {
   padding-top: 150px;

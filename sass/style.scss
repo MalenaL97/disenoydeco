@@ -6,18 +6,7 @@ $blanco: #fff;
 $altura: 100px;
 
 /* Responsive */
-
-@media only screen and (max-width: 1199px){
-}
-@media only screen and (max-width: 991px){
-}
-@media only screen and (max-width: 767px){    
-}
-@media only screen and (max-width: 575px){   
-}
-@media only screen and (max-width: 479px){  
-}
-
+@import "sass/responsive";
 
 //anidamiento//
 
@@ -103,7 +92,10 @@ h3 {
 	flex-direction: row;
 	row-gap: 60px;
 	justify-content: space-around;
-	align-items: center
+	align-items: center;
+	.foto{
+		margin-right: 30px;
+	}
 }
 h4 {
 	padding-top: 150px ;
